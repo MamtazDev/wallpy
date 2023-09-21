@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Lato:wght@100;300;400;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --bak: 'Bakbak One', cursive;
+    --lato: 'Lato', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202529;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+.container {
+    max-width: 1596px;
+}
+
+
+/* Header Start */
+header {
+    font-family: var(--bak);
+}
+
+.navbar {
+    padding-top: 40px;
+    padding-bottom: 34px;
+}
+
+.navbar-brand {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
+.nav-link {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0;
+}
+
+.navbar-nav {
+    gap: 24px;
+}
+
+.nav-link:hover {
+    color: #FDF516;
+}
+
+.nav-link:active {
+    color: #FDF516;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.searchNav {
+    width: 771px;
+    height: 45px;
+    background-image: url("../assets/Search.png");
+    background-repeat: no-repeat;
+    background-position: canter left 2%;
+    background-size: initial;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+.searchNav input {
+    background: transparent;
+    padding: 13px;
+}
+
+.searchNav input::placeholder {
+    color: #5A5A5A;
+    font-family: var(--lato);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Header End */
