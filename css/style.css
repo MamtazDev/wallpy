@@ -92,7 +92,7 @@ header {
 }
 
 .navbar-toggler {
-    border: none;
+    border: #FDF516;
 }
 
 :focus-visible {
@@ -108,7 +108,7 @@ header {
     height: 45px;
     background-image: url("../assets/Search.png");
     background-repeat: no-repeat;
-    background-position: canter left 2%;
+    background-position: center left 2%;
     background-size: initial;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.20);
@@ -116,7 +116,12 @@ header {
 
 .searchNav input {
     background: transparent;
-    padding: 13px;
+    padding: 13px 13px 13px 50px;
+    border: none;
+    font-family: var(--lato);
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFF;
 }
 
 .searchNav input::placeholder {
