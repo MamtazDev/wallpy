@@ -20,10 +20,12 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-bars"></i>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                         <li class="nav-item">
                             <form class="d-flex">
                                 <div class="searchNav">
@@ -31,14 +33,33 @@
                                 </div>
                             </form>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item accountParent">
                             <a class="nav-link" href="#">Account</a>
+                            <div class="accountChild row">
+                                <div class="col-6">
+                                    <div class="childInner d-flex flex-column gap-3 text-nowrap" style="border-right: 1px solid #292D31;">
+                                        <!-- <a href="login.html">Login</a> -->
+                                        <a href="profile.html">Profile</a>
+                                        <a href="setting.html">Settings</a>
+                                        <a href="#">Favorites</a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="childInner d-flex flex-column gap-3 text-nowrap">
+                                        <!-- <a href="register.html">Register</a> -->
+                                        <a href="#">Messages</a>
+                                        <a href="#">Help Center</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Upload</a>
                         </li>
-                        
                     </ul>
+                    <div class="profileImg text-center">
+                        <img src="./assets/profile.png" alt="Profile Image">
+                    </div>
                 </div>
             </div>
         </nav>
