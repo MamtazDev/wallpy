@@ -15,7 +15,8 @@
 <body>
     <div class="container" style="max-width: 978px;">
         <div class="brightBg d-flex justify-content-between align-items-center">
-            <div class="imgLogin d-flex flex-column justify-content-between align-items-center">
+            <div class="imgLogin d-flex flex-column justify-content-between align-items-center"
+                style="background-image: url('./assets/loginImg.png');">
                 <p>
                     Welcome back; we missed you.
                 </p>
@@ -30,52 +31,46 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div style="padding: 20px;">
                 <h1>
                     THE WALLPAPER SOCIETY
                 </h1>
                 <div class="authtab text-center mx-auto">
-                    <button class="tabActive tabInner">Sign In</button>
+                    <button class="tabInner tabActive">Sign In</button>
                     <button class="tabInner">Sign Up</button>
                 </div>
-                <div class="text-center">
-
-                    <div>
-                        <form action="">
-                            <div>
-                                <label for="email">Email</label>
-                                <input type="mail" name="email" id="email"
-                                    placeholder="wallpapers@thewallpapersociety.com">
-                            </div>
-                            <div>
-                                <label for="password">Password</label>
-                                <input type="mail" name="" id="email" placeholder="*****************">
-                            </div>
-                            <button>Sign In</button>
-                            <p>Can’t login</p>
-                        </form>
-
-                        <div class="d-flex flex-column gap-2 align-items-center">
-                            <button>
-                                <img src="./assets/fbsignin.png" alt="Facebook">
-                                Sign In with Facebook
-                            </button>
-                            <button>
-                                <img src="./assets/googlesignIn.png" alt="Google">
-                                Sign In with Google
-                            </button>
-                            <button>
-                                <img src="./assets/applesignIn.png" alt="Apple">
-                                Sign In with Apple
-                            </button>
+                <div>
+                    <form action="" class="d-flex flex-column justify-content-start gap-3 mb-5">
+                        <label for="email">Email</label>
+                        <input class="w-100" type="mail" name="email" id="email"
+                            placeholder="wallpapers@thewallpapersociety.com">
+                        <label for="password">Password</label>
+                        <input class="w-100" type="mail" name="" id="email" placeholder="*****************">
+                        <div class="text-center mt-4">
+                            <button class="darkBtn mb-2">Sign In</button>
+                            <p style="color: #373737; font-size: 10px;">Can’t login</p>
                         </div>
-                        <div class="community d-flex justify-content-center gap-2 align-items-center">
-                            <a href="#">Community Rules</a>
-                            <a href="#">Privacy Policy</a>
-                            <a href="#">Terms and Conditions</a>
-                        </div>
+                    </form>
+
+                    <div class="socialBtn d-flex flex-column justify-content-center align-items-center gap-2 ">
+                        <button class="w-100" style="background:  #1877F2;">
+                            <img src="./assets/fbsignin.png" alt="Facebook">
+                            Sign In with Facebook
+                        </button>
+                        <button class="w-100" style="background: #FFF; color:#CECECE;">
+                            <img src="./assets/googlesignIn.png" alt="Google">
+                            Sign In with Google
+                        </button>
+                        <button class="w-100" style="background: #000;">
+                            <img src="./assets/applesignIn.png" alt="Apple">
+                            Sign In with Apple
+                        </button>
                     </div>
-
+                    <div class="community d-flex justify-content-center gap-4 align-items-center mt-5">
+                        <a href="#">Community Rules</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                    </div>
                 </div>
             </div>
         </div>
