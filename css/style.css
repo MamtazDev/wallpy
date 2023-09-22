@@ -41,6 +41,10 @@ a {
     text-decoration: none;
 }
 
+button{
+    border: none;
+}
+
 :focus-visible {
     outline: none;
 }
@@ -199,6 +203,7 @@ header {
     font-family: var(--bak);
     font-weight: 400;
     padding: 70px 55px 34px 55px;
+    height: 746px;
 }
 
 .imgLogin p {
@@ -213,6 +218,49 @@ header {
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.50);
     padding: 52px;
+}
+
+.brightBg h1 {
+    color: #373737;
+    font-family: var(--bak);
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.authtab {
+    border-radius: 12px;
+    background: #C9C9C9;
+    padding: 4px;
+    color: #373737;
+    font-family: var(--bak);
+    font-size: 12px;
+    font-weight: 400;
+    width: max-content;
+}
+
+.tabInner {
+    padding: 7px 33px;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.tabActive, .tabInner:hover {
+    background: #FFF;
+
+}
+
+.community a {
+    color: #373737;
+    font-family: var(--roboto);
+    font-size: 12px;
+    font-weight: 500;
+    transition: 0.4s ease-in-out;
+}
+
+.community a:hover {
+    color: #FDF516;
 }
 
 /* Login Page & Register Page End */
