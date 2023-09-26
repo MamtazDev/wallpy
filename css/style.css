@@ -54,6 +54,10 @@ input {
     max-width: 1596px;
 }
 
+.mt_85 {
+    margin-top: 85px;
+}
+
 
 /* Header Start */
 header {
@@ -192,7 +196,6 @@ header {
     padding: 28px;
     font-family: var(--bak);
     font-weight: 400;
-    margin-top: 85px;
 }
 
 .imgLogin {
@@ -298,6 +301,24 @@ header {
     display: block;
     color: #FFF;
     font-size: 12px;
+}
+
+.backBtn {
+    padding: 9px 15px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.70);
+    color: #FFF;
+    font-family: var(--lato);
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.backBtn:hover{
+    opacity: .9;
 }
 
 
