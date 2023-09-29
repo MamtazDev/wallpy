@@ -33,29 +33,42 @@
                                 </div>
                             </form>
                         </li>
-                        <li class="nav-item accountParent">
-                            <a class="nav-link" href="#">Account</a>
-                            <div class="accountChild row">
-                                <div class="col-6">
-                                    <div class="childInner d-flex flex-column gap-3 text-nowrap"
-                                        style="border-right: 1px solid #292D31;">
-                                        <!-- <a href="login.html">Login</a> -->
-                                        <a href="profile.html">Profile</a>
-                                        <a href="setting.html">Settings</a>
-                                        <a href="#">Favorites</a>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="childInner d-flex flex-column gap-3 text-nowrap">
-                                        <!-- <a href="register.html">Register</a> -->
-                                        <a href="#">Messages</a>
-                                        <a href="#">Help Center</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Upload</a>
+                            <ul class="navBg d-flex justify-content-center gap-3">
+                                <li class="accountParent">
+                                    <a class="nav-link" href="#">Account</a>
+                                    <div class="accountChild" >
+                                        <div class="row navBorder">
+                                            <div class="col-6">
+                                                <div class="childInner d-flex flex-column gap-3 text-nowrap"  style="border-right: 1px solid #292D31;">
+                                                    <a href="login.html">Login</a>
+                                                    <a href="profile.html">Profile</a>
+                                                    <a href="#">Favorites</a>
+                                                    <a href="#">Collections</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6" s>
+                                                <div class="childInner d-flex flex-column gap-3 text-nowrap">
+                                                    <a href="register.html">Register</a>
+                                                    <a href="#">Messages</a>
+                                                    <a href="#">The Vault</a>
+                                                    <a href="setting.html">Settings</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="logoutBtn mx-auto">
+                                            <img src="./assets/logout.png" alt="Logout">
+                                            Log Out
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span  style="border-right: 1px solid #292D31;"></span>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#">Upload</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                     <div class="profileImg text-center">

@@ -62,6 +62,7 @@ input {
 /* Header Start */
 header {
     font-family: var(--bak);
+    font-weight: 400;
 }
 
 .navbar {
@@ -72,14 +73,12 @@ header {
 .navbar-brand {
     color: #FFF;
     font-size: 40px;
-    font-weight: 400;
 }
 
 
 .nav-link {
     color: #FFF;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 15px;
     padding: 0;
 }
 
@@ -150,6 +149,13 @@ header {
     border-radius: 50%;
 }
 
+.navBg {
+    padding: 12px 22px;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+
 .accountParent {
     position: relative;
     transition: 0.3s ease-in-out;
@@ -160,14 +166,19 @@ header {
     background: rgba(0, 0, 0, 0.50);
     backdrop-filter: blur(25px);
     position: absolute;
-    top: 90%;
+    top: 235%;
+    left: -40%;
     width: max-content;
     visibility: hidden;
 }
 
+.navBorder {
+    border-bottom: 1px solid #292D31;
+    margin: 22px 20px 10px 20px;
+}
+
 .childInner {
-    padding: 0 32px;
-    margin: 22px 0;
+    padding: 10px 30px;
 }
 
 .childInner a {
@@ -184,6 +195,19 @@ header {
 
 .accountParent:hover .accountChild {
     visibility: visible;
+}
+
+.logoutBtn {
+    display: block;
+    background: none;
+    margin-bottom: 10px;
+    color: #939393;
+    font-size: 12px;
+    transition: 0.4s ease-in-out;
+}
+
+.logoutBtn:hover{
+   color: #F4F4F4;
 }
 
 /* Header End */
