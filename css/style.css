@@ -88,7 +88,8 @@ h2 {
 
 
 /* Header Start */
-header, .nav-link  {
+header,
+.nav-link {
     font-family: var(--bak);
     font-weight: 400;
     color: #FFF;
@@ -209,7 +210,7 @@ header, .nav-link  {
 }
 
 .childInner a {
-    
+
     transition: 0.4s ease-in-out;
 }
 
@@ -242,6 +243,7 @@ footer {
     font-family: var(--bak);
     font-weight: 400;
     color: #FFF;
+    margin-top: 255px;
 }
 
 footer p {
@@ -482,7 +484,7 @@ footer hr {
     height: 279px;
 }
 
-.tredImg img:hover {
+.tredImg img:hover, .staff img:hover {
     transform: scale(1.02);
     cursor: pointer;
 }
@@ -519,7 +521,8 @@ footer hr {
     border-radius: 50%;
 }
 
-.artist p, .viewProfile {
+.artist p,
+.viewProfile {
     color: #FFF;
     font-family: var(--bak);
     font-size: 15px;
@@ -534,8 +537,28 @@ footer hr {
     transition: 0.4s ease-in-out;
 }
 
-.viewProfile:hover{
+.viewProfile:hover {
     opacity: .9;
+    background-color: #292e32 !important;
 }
 
 /* Featured Artists End*/
+
+/* Staff Pick Start */
+
+.staff {
+    /* width: 100%; */
+    border-radius: 30px;
+    overflow: hidden;
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5); */
+}
+
+.staff img{
+    border-radius: 30px;
+    transition: 0.4s ease-in-out;
+    width: 100%;
+}
+
+/* Staff Pick End here */
