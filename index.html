@@ -13,182 +13,187 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">WPS</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                        <i class="fa fa-bars"></i>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
-                        <li class="nav-item">
-                            <form class="d-flex">
-                                <div class="searchNav">
-                                    <input class="w-100" type="search" placeholder="Find your next wallpaper...">
-                                </div>
-                            </form>
-                        </li>
-                        <li class="nav-item">
-                            <ul class="navBg d-flex justify-content-center gap-3">
-                                <li class="accountParent">
-                                    <a class="nav-link" href="#">Account</a>
-                                    <div class="accountChild">
-                                        <div class="row navBorder">
-                                            <div class="col-6">
-                                                <div class="childInner d-flex flex-column gap-3 text-nowrap"
-                                                    style="border-right: 1px solid #292D31;">
-                                                    <a href="login.html">Login</a>
-                                                    <a href="profile.html">Profile</a>
-                                                    <a href="#">Favorites</a>
-                                                    <a href="#">Collections</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-6" s>
-                                                <div class="childInner d-flex flex-column gap-3 text-nowrap">
-                                                    <a href="register.html">Register</a>
-                                                    <a href="#">Messages</a>
-                                                    <a href="#">The Vault</a>
-                                                    <a href="setting.html">Settings</a>
-                                                </div>
-                                            </div>
+    <main>
+        <div class="bgShadowTop">
+            <header>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">WPS</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i class="fa fa-bars"></i>
+                            </span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                                <li class="nav-item">
+                                    <form class="d-flex">
+                                        <div class="searchNav">
+                                            <input class="w-100" type="search"
+                                                placeholder="Find your next wallpaper...">
                                         </div>
-                                        <button class="logoutBtn mx-auto">
-                                            <img src="./assets/logout.png" alt="Logout">
-                                            Log Out
-                                        </button>
-                                    </div>
+                                    </form>
                                 </li>
-                                <li>
-                                    <span style="border-right: 1px solid #292D31;"></span>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="#">Upload</a>
+                                <li class="nav-item">
+                                    <ul class="navBg d-flex justify-content-center gap-3">
+                                        <li class="accountParent">
+                                            <a class="nav-link" href="#">Account</a>
+                                            <div class="accountChild">
+                                                <div class="row navBorder">
+                                                    <div class="col-6">
+                                                        <div class="childInner d-flex flex-column gap-3 text-nowrap"
+                                                            style="border-right: 1px solid #292D31;">
+                                                            <a href="login.html">Login</a>
+                                                            <a href="profile.html">Profile</a>
+                                                            <a href="#">Favorites</a>
+                                                            <a href="#">Collections</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6" s>
+                                                        <div class="childInner d-flex flex-column gap-3 text-nowrap">
+                                                            <a href="register.html">Register</a>
+                                                            <a href="#">Messages</a>
+                                                            <a href="#">The Vault</a>
+                                                            <a href="setting.html">Settings</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="logoutBtn mx-auto">
+                                                    <img src="./assets/logout.png" alt="Logout">
+                                                    Log Out
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span style="border-right: 1px solid #292D31;"></span>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="#">Upload</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                    <div class="profileImg text-center">
-                        <img src="./assets/profile.png" alt="Profile Image">
+                            <div class="profileImg text-center">
+                                <img src="./assets/profile.png" alt="Profile Image">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+                </nav>
+            </header>
 
-    <main>
-        <!-- Trending Start -->
-        <section>
-            <div class="container">
-                <div class="trending all_mb">
-                    <div class="trendingHeader d-flex justify-content-start align-items-center mb-3">
-                        <div class="trendUpBtn ">
-                            <button class="trendUpBtnActive">
-                                <img src="./assets/fire.png" alt="Trending">
-                                Trending
-                            </button>
-                            <button>
-                                <img src="./assets/chart.png" alt="Upcoming">
-                                Upcoming
-                            </button>
+            <!-- Trending Start -->
+            <section class="trandingContainer">
+                <div class="container">
+                    <div class="trending all_mb">
+                        <div class="trendingHeader d-flex justify-content-start align-items-center mb-3">
+                            <div class="trendUpBtn ">
+                                <button class="trendUpBtnActive">
+                                    <img src="./assets/fire.png" alt="Trending">
+                                    Trending
+                                </button>
+                                <button>
+                                    <img src="./assets/chart.png" alt="Upcoming">
+                                    Upcoming
+                                </button>
+                            </div>
+                            <div class="allBtn">
+                                <button class="trendUpBtnActive">
+                                    All
+                                </button>
+                                <button>
+                                    Illustration
+                                </button>
+                                <button>
+                                    AI
+                                </button>
+                                <button>
+                                    Photography
+                                </button>
+                            </div>
                         </div>
-                        <div class="allBtn">
-                            <button class="trendUpBtnActive">
-                                All
-                            </button>
-                            <button>
-                                Illustration
-                            </button>
-                            <button>
-                                AI
-                            </button>
-                            <button>
-                                Photography
-                            </button>
+                        <div class="trendingInner mb-4">
+                            <div class="row gy-4">
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <img class="img-fluid" src="./assets/trending.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <img class="img-fluid" src="./assets/trending2.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <img class="img-fluid" src="./assets/trending3.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <img class="img-fluid" src="./assets/trending4.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <img class="img-fluid" src="./assets/trending2.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <img class="img-fluid" src="./assets/trending4.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <img class="img-fluid" src="./assets/trending.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <img class="img-fluid" src="./assets/trending3.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <button class="moreBtn">
+                            More Wallpapers
+                        </button>
                     </div>
-                    <div class="trendingInner mb-4">
-                        <div class="row gy-4">
-                            <div class="col-12 col-md-3">
-                                <div class="tredImg">
-                                    <img class="img-fluid" src="./assets/trending.png" alt="img">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="tredImg">
-                                    <img class="img-fluid" src="./assets/trending2.png" alt="img">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="tredImg">
-                                    <img class="img-fluid" src="./assets/trending3.png" alt="img">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="tredImg">
-                                    <img class="img-fluid" src="./assets/trending4.png" alt="img">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="tredImg">
-                                    <img class="img-fluid" src="./assets/trending2.png" alt="img">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="tredImg">
-                                    <img class="img-fluid" src="./assets/trending4.png" alt="img">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="tredImg">
-                                    <img class="img-fluid" src="./assets/trending.png" alt="img">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="tredImg">
-                                    <img class="img-fluid" src="./assets/trending3.png" alt="img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="moreBtn">
-                        More Wallpapers
-                    </button>
                 </div>
-            </div>
-        </section>
-        <!-- Trending End -->
+            </section>
+            <!-- Trending End -->
 
-        <!-- Featured Wallpapers Start -->
-        <section>
-            <div class="container">
-                <div class="feature all_mb">
-                    <h2 class="mb-4">Featured Wallpapers</h2>
-                    <div class="row gy-4">
-                        <div class="col-12 col-md-2 col-lg-4">
-                            <div class="tredImg">
-                                <img class="img-fluid" src="./assets/feature.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-2 col-lg-4">
-                            <div class="tredImg">
-                                <img class="img-fluid" src="./assets/feature.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-2 col-lg-4">
-                            <div class="tredImg">
-                                <img class="img-fluid" src="./assets/feature.png" alt="img">
+            <div class="bgShadowBottom">
+                <!-- Featured Wallpapers Start -->
+                <section>
+                    <div class="container">
+                        <div class="feature all_mb">
+                            <h2 class="mb-4">Featured Wallpapers</h2>
+                            <div class="row gy-4">
+                                <div class="col-12 col-md-2 col-lg-4">
+                                    <div class="tredImg">
+                                        <img class="img-fluid" src="./assets/feature.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-4">
+                                    <div class="tredImg">
+                                        <img class="img-fluid" src="./assets/feature.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-4">
+                                    <div class="tredImg">
+                                        <img class="img-fluid" src="./assets/feature.png" alt="img">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
+                <!-- Featured Wallpapers End -->
             </div>
-        </section>
-        <!-- Featured Wallpapers End -->
+        </div>
 
         <!-- Featured Artists Start -->
         <section>
@@ -197,24 +202,24 @@
                 <div class="artist">
                     <div class="d-flex justify-content-between align-items-center gap-4">
                         <div class="d-flex flex-column gap-2 align-items-center">
-                            <img class="proImg mb-3" src="./assets/artist.png" alt="Profile"/>
+                            <img class="proImg mb-3" src="./assets/artist.png" alt="Profile" />
                             <div class="profileInner">
                                 <div class="d-flex justify-content-start gap-1 align-items-center mb-2">
-                                    <img src="./assets/Verified.png" alt="img"/>
+                                    <img src="./assets/Verified.png" alt="img" />
                                     <p>Diberkato / Ilustrator</p>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <a href="#">
-                                        <img src="./assets/twitter.png" alt="Twitter"/>
+                                        <img src="./assets/twitter.png" alt="Twitter" />
                                     </a>
                                     <a href="#">
-                                        <img src="./assets/behance.png" alt="Behance"/>
+                                        <img src="./assets/behance.png" alt="Behance" />
                                     </a>
                                     <a href="#">
-                                        <img src="./assets/dribble.png" alt="Dribble"/>
+                                        <img src="./assets/dribble.png" alt="Dribble" />
                                     </a>
                                     <a href="#">
-                                        <img src="./assets/instagram.png" alt="Instragram"/>
+                                        <img src="./assets/instagram.png" alt="Instragram" />
                                     </a>
                                 </div>
                             </div>
@@ -245,31 +250,31 @@
                             <a class="viewProfile" href="#" style="font-size: 10px;">View Profile</a>
                         </div>
                         <div class="d-flex flex-column gap-2 align-items-center">
-                            <img class="proImg mb-3" src="./assets/artist.png" alt="Profile"/>
+                            <img class="proImg mb-3" src="./assets/artist.png" alt="Profile" />
                             <div class="profileInner">
                                 <div class="d-flex justify-content-start gap-1 align-items-center mb-2">
-                                    <img src="./assets/Verified.png" alt="img"/>
+                                    <img src="./assets/Verified.png" alt="img" />
                                     <p>Diberkato / Ilustrator</p>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <a href="#">
-                                        <img src="./assets/twitter.png" alt="Twitter"/>
+                                        <img src="./assets/twitter.png" alt="Twitter" />
                                     </a>
                                     <a href="#">
-                                        <img src="./assets/behance.png" alt="Behance"/>
+                                        <img src="./assets/behance.png" alt="Behance" />
                                     </a>
                                     <a href="#">
-                                        <img src="./assets/dribble.png" alt="Dribble"/>
+                                        <img src="./assets/dribble.png" alt="Dribble" />
                                     </a>
                                     <a href="#">
-                                        <img src="./assets/instagram.png" alt="Instragram"/>
+                                        <img src="./assets/instagram.png" alt="Instragram" />
                                     </a>
                                 </div>
                             </div>
                             <a class="viewProfile" href="#" style="font-size: 10px;">View Profile</a>
                         </div>
                         <div class="d-flex flex-column gap-2 align-items-center">
-                            <img class="proImg mb-3" src="./assets/artist.png" alt="Profile"/>
+                            <img class="proImg mb-3" src="./assets/artist.png" alt="Profile" />
                             <div class="profileInner">
                                 <div class="d-flex justify-content-start gap-1 align-items-center mb-2">
                                     <img src="./assets/Verified.png" alt="img">
@@ -277,40 +282,40 @@
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <a href="#">
-                                        <img src="./assets/twitter.png" alt="Twitter"/>
+                                        <img src="./assets/twitter.png" alt="Twitter" />
                                     </a>
                                     <a href="#">
-                                        <img src="./assets/behance.png" alt="Behance"/>
+                                        <img src="./assets/behance.png" alt="Behance" />
                                     </a>
                                     <a href="#">
-                                        <img src="./assets/dribble.png" alt="Dribble"/>
+                                        <img src="./assets/dribble.png" alt="Dribble" />
                                     </a>
                                     <a href="#">
-                                        <img src="./assets/instagram.png" alt="Instragram"/>
+                                        <img src="./assets/instagram.png" alt="Instragram" />
                                     </a>
                                 </div>
                             </div>
                             <a class="viewProfile" href="#" style="font-size: 10px;">View Profile</a>
                         </div>
                         <div class="d-flex flex-column gap-2 align-items-center">
-                            <img class="proImg mb-3" src="./assets/artist.png" alt="Profile"/>
+                            <img class="proImg mb-3" src="./assets/artist.png" alt="Profile" />
                             <div class="profileInner">
                                 <div class="d-flex justify-content-start gap-1 align-items-center mb-2">
-                                    <img src="./assets/Verified.png" alt="img"/>
+                                    <img src="./assets/Verified.png" alt="img" />
                                     <p>Diberkato / Ilustrator</p>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <a class="socialLink overflow-hidden" href="#">
-                                        <img src="./assets/twitter.png" alt="Twitter"/>
+                                        <img src="./assets/twitter.png" alt="Twitter" />
                                     </a>
                                     <a href="#">
-                                        <img src="./assets/behance.png" alt="Behance"/>
+                                        <img src="./assets/behance.png" alt="Behance" />
                                     </a>
                                     <a href="#">
-                                        <img src="./assets/dribble.png" alt="Dribble"/>
+                                        <img src="./assets/dribble.png" alt="Dribble" />
                                     </a>
                                     <a href="#">
-                                        <img src="./assets/instagram.png" alt="Instragram"/>
+                                        <img src="./assets/instagram.png" alt="Instragram" />
                                     </a>
                                 </div>
                             </div>

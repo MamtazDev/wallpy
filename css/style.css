@@ -88,6 +88,11 @@ h2 {
 
 
 /* Header Start */
+header {
+    position: relative;
+    z-index: 99999;
+}
+
 header,
 .nav-link {
     font-family: var(--bak);
@@ -144,6 +149,8 @@ header,
 }
 
 .searchNav {
+    position: relative;
+    z-index: 99999;
     width: 771px;
     height: 45px;
     background-image: url("../assets/Search.png");
@@ -233,6 +240,64 @@ header,
 
 .logoutBtn:hover {
     color: #F4F4F4;
+}
+
+.bgShadowTop,
+.bgShadowBottom {
+    position: relative;
+    z-index: 99999;
+}
+
+.bgShadowTop::before {
+    position: absolute;
+    content: "";
+    left: 11%;
+    top: 11%;
+    z-index: -9999;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 348px 218px #25242c;
+    -moz-box-shadow: 0 0 348px 218px #25242c;
+    box-shadow: 0 0 348px 218px #25242c;
+}
+
+.bgShadowTop::after {
+    position: absolute;
+    content: "";
+    right: 11%;
+    top: 11%;
+    z-index: -9999;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 348px 218px #545454;
+    -moz-box-shadow: 0 0 348px 218px #545454;
+    box-shadow: 0 0 348px 218px #545454;
+}
+
+.bgShadowBottom::before{
+    position: absolute;
+    content: "";
+    left: 11%;
+    top: 11%;
+    z-index: -9999;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 348px 218px #2b2b2b;
+    -moz-box-shadow: 0 0 348px 218px #2b2b2b;
+    box-shadow: 0 0 348px 218px #2b2b2b;
+}
+
+.bgShadowBottom::after {
+    position: absolute;
+    content: "";
+    right: 11%;
+    top: 11%;
+    z-index: -9999;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 348px 218px #000;
+    -moz-box-shadow: 0 0 348px 218px #000;
+    box-shadow: 0 0 348px 218px #000;
 }
 
 /* Header End */
@@ -428,11 +493,12 @@ footer hr {
 /* Login Page & Register Page End */
 
 /* Trending Start */
-
 .trending {
     border-radius: 40px;
     background: rgba(0, 0, 0, 0.20);
     padding: 24px;
+    position: relative;
+    z-index: 999999;
 }
 
 .trendingHeader {
@@ -484,7 +550,8 @@ footer hr {
     height: 279px;
 }
 
-.tredImg img:hover, .staff img:hover {
+.tredImg img:hover,
+.staff img:hover {
     transform: scale(1.02);
     cursor: pointer;
 }
@@ -555,7 +622,7 @@ footer hr {
     -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5); */
 }
 
-.staff img{
+.staff img {
     border-radius: 30px;
     transition: 0.4s ease-in-out;
     width: 100%;
