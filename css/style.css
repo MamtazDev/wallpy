@@ -55,6 +55,10 @@ input {
     max-width: 1596px;
 }
 
+.custom_Container {
+    max-width: 1800px;
+}
+
 .mt_85 {
     margin-top: 85px;
 }
@@ -88,7 +92,8 @@ h2 {
 
 
 /* Header Start */
-header {
+header,
+nav {
     position: relative;
     z-index: 99999;
 }
@@ -150,7 +155,7 @@ header,
 
 .searchNav {
     position: relative;
-    z-index: 99999;
+    z-index: 999999;
     width: 771px;
     height: 45px;
     background-image: url("../assets/Search.png");
@@ -162,6 +167,8 @@ header,
 }
 
 .searchNav input {
+    position: relative;
+    z-index: 999999;
     background: transparent;
     padding: 13px 13px 13px 50px;
     border: none;
@@ -172,13 +179,18 @@ header,
 }
 
 .searchNav input::placeholder {
+    position: relative;
+    z-index: 999999;
     color: #5A5A5A;
     font-family: var(--lato);
     font-size: 15px;
     font-weight: 400;
 }
 
-.profileImg {
+.profileImg,
+.profileImg img {
+    position: relative;
+    z-index: 999999;
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -274,7 +286,7 @@ header,
     box-shadow: 0 0 348px 218px #545454;
 }
 
-.bgShadowBottom::before{
+.bgShadowBottom::before {
     position: absolute;
     content: "";
     left: 11%;
@@ -629,3 +641,90 @@ footer hr {
 }
 
 /* Staff Pick End here */
+
+
+
+/* WallPaper Page Start */
+.wallpaper {
+    position: relative;
+}
+
+.btnPosition {
+    position: absolute;
+    top: 2.9%;
+    right: 2%;
+}
+
+.like,
+.addLibrary {
+    transition: 0.4s ease-in-out;
+}
+
+.addLibrary:hover span svg {
+    fill: #FFF !important;
+}
+
+.like:hover span svg {
+    fill: red !important;
+}
+
+.sideBar {
+    width: 347px;
+    padding: 15px 23px 36px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.20);
+    color: #FFF;
+    font-family: var(--bak);
+    font-weight: 400;
+}
+
+.sideImgPro {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.sideBar p {
+    font-size: 15px;
+}
+
+.sideBar h3 {
+    font-size: 20px;
+}
+
+.sideBar hr {
+    color: #939393;
+}
+
+.tag span,
+.info p {
+    font-size: 12px;
+}
+
+.info p span {
+    color: #CCC;
+}
+
+.downLoadBtn {
+    padding: 5px 21px;
+    border-radius: 5px;
+    background: #2924FF;
+    color: #C4C4C4;
+}
+
+.ownerShip {
+    background: #141414;
+    padding: 6px 18px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.ownerShip a {
+    color: #D9D9D9;
+    font-family: var(--roboto);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+/* WallPaper Page End */
