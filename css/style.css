@@ -104,7 +104,6 @@ h3 {
 }
 
 .bgShadowTop,
-.bgShadowBottom,
 .sideBar {
     position: relative;
     z-index: 99999;
@@ -243,6 +242,7 @@ header,
     left: -40%;
     width: max-content;
     visibility: hidden;
+    z-index: 9;
 }
 
 .navBorder {
@@ -255,7 +255,7 @@ header,
 }
 
 .childInner a {
-
+    color: #fff;
     transition: 0.4s ease-in-out;
 }
 
@@ -306,17 +306,23 @@ header,
     box-shadow: 0 0 348px 218px #545454;
 }
 
+.bgShadowBottom{
+    position: relative;
+    z-index: 5;
+}
+
 .bgShadowBottom::before {
     position: absolute;
     content: "";
     left: 11%;
     top: 11%;
-    z-index: -9999;
+    z-index: -5;
     background: transparent;
     border-radius: 50%;
     -webkit-box-shadow: 0 0 348px 218px #2b2b2b;
     -moz-box-shadow: 0 0 348px 218px #2b2b2b;
     box-shadow: 0 0 348px 218px #2b2b2b;
+    /* box-shadow: 0 0 348px 218px #ffffff; */
 }
 
 .bgShadowBottom::after {
@@ -324,12 +330,13 @@ header,
     content: "";
     right: 11%;
     top: 11%;
-    z-index: -9999;
+    z-index: -5;
     background: transparent;
     border-radius: 50%;
     -webkit-box-shadow: 0 0 348px 218px #000;
     -moz-box-shadow: 0 0 348px 218px #000;
     box-shadow: 0 0 348px 218px #000;
+    /* box-shadow: 0 0 348px 218px #ffffff; */
 }
 
 /* Header End */
@@ -530,7 +537,7 @@ footer hr {
     background: rgba(0, 0, 0, 0.20);
     padding: 24px;
     position: relative;
-    z-index: 999999;
+    z-index: 8;
 }
 
 .trendingHeader {
