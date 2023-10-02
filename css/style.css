@@ -227,9 +227,11 @@ header,
     background-color: #000;
 }
 
-
-.accountParent {
+.accountParent{
     position: relative;
+}
+
+.accountParent .accountChild {
     transition: 0.3s ease-in-out;
 }
 
@@ -403,6 +405,7 @@ footer hr {
     padding: 28px;
     font-family: var(--bak);
     font-weight: 400;
+    max-width: 990px;
 }
 
 .imgLogin {
@@ -412,7 +415,7 @@ footer hr {
     border-radius: 30px;
     display: block;
     color: #F4F4F4;
-    padding: 70px 55px 34px 55px;
+    padding: 70px 20px;
     height: 746px;
 }
 
@@ -435,6 +438,7 @@ footer hr {
     font-size: 30px;
     margin-bottom: 35px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .authtab {
@@ -734,9 +738,17 @@ footer hr {
     transition: 0.4s ease-in-out;
 }
 
-.downLoadBtn:hover,
-.listBtn:hover {
+.downLoadBtn:hover
+ {
     opacity: .9;
+}
+
+.listBtn button{
+    transition: 0.4s ease-in-out;
+}
+
+.listBtn button:hover{
+    color: #FDF516 !important;
 }
 
 .ownerShip {
@@ -779,6 +791,10 @@ footer hr {
     opacity: 0;
 }
 
+.addLibrary .libraryOption{
+    transition: 0.4s ease-in-out;
+}
+
 .addLibrary:hover .libraryOption{
     visibility: visible;
     opacity: 1;
@@ -804,5 +820,12 @@ footer hr {
     font-size: 10px !important;
 }
 
+.libraryOption button{
+    transition: 0.4s ease-in-out;
+}
+
+.libraryOption button:hover{
+    color: #FDF516;
+}
 
 /* WallPaper Page End */
