@@ -67,6 +67,12 @@ input {
     margin-bottom: 50px;
 }
 
+.fontBak{
+    font-family: var(--bak);
+    font-weight: 400;
+    color: #FFF;
+}
+
 h2 {
     color: #FFF;
     font-family: var(--bak);
@@ -97,7 +103,17 @@ h3 {
     background: #939393;
 }
 
+.bgShadowTop,
+.bgShadowBottom,
+.sideBar {
+    position: relative;
+    z-index: 99999;
+}
 
+.mainPosition {
+    position: relative;
+    z-index: 999999;
+}
 
 /* Header Start */
 header,
@@ -145,13 +161,15 @@ header,
     padding-left: 0;
 }
 
-.navbar-toggler-icon {
+.navbar-toggler {
     border: none;
 }
 
-.navbar-toggler-icon i {
+.navbar-toggler span i {
     color: #FFF;
 }
+
+
 
 :focus-visible {
     outline: none;
@@ -260,12 +278,6 @@ header,
 
 .logoutBtn:hover {
     color: #F4F4F4;
-}
-
-.bgShadowTop,
-.bgShadowBottom, .sideBar {
-    position: relative;
-    z-index: 99999;
 }
 
 .bgShadowTop::before {
@@ -653,48 +665,30 @@ footer hr {
 
 
 /* WallPaper Page Start */
- .mainPosition{
-    position: relative;
-    z-index: 999999;
- }
-
 
 .wallpaper {
     position: relative;
-}
-
-.wallpaper img{
+    background-image: url("../assets/wallpaper.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 802px;
+    width: 1442px;
 }
 
-.btnPosition {
-    position: absolute;
-    top: 2.9%;
-    right: 2%;
-}
 
-.like,
-.addLibrary {
-    transition: 0.4s ease-in-out;
-}
-
-.addLibrary:hover span svg {
-    fill: #FFF !important;
-}
-
-.like:hover span svg {
-    fill: red !important;
+.addLibrary img,
+.like img {
+    height: 25px;
+    width: 25px;
 }
 
 .sideBar {
     width: 347px;
-    height: 802px;
+    height: 100%;
     padding: 15px 23px;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.20);
-    color: #FFF;
-    font-family: var(--bak);
-    font-weight: 400;
 }
 
 .sideImgPro {
@@ -711,7 +705,7 @@ footer hr {
     font-size: 20px;
 }
 
-.sideBar hr {
+.sideBar hr, .libraryOption hr {
     color: #939393;
 }
 
@@ -758,7 +752,46 @@ footer hr {
 }
 
 
+.searchWallpaper input, .libraryOption, .libraryOption button{
+    font-size: 12px;
+}
 
+.btnPosition {
+    padding: 21px 33px;
+    position: relative;
+}
 
+.libraryOption {
+    position: absolute;
+    top: 95%;
+    right: 5%;
+    border-radius: 5px;
+    background: rgba(39, 39, 39, 0.90);
+    padding: 17px 28px;
+    visibility: hidden;
+}
+
+.searchWallpaper {
+    z-index: 999999;
+    background-image: url("../assets/Search.png");
+    background-repeat: no-repeat;
+    background-position: center left 2%;
+    background-size: initial;
+    border-radius: 5px;
+    background-color: #0D0D0D;
+}
+
+.searchWallpaper input {
+    padding: 5px 5px 5px 30px;
+}
+
+.searchWallpaper input::placeholder {
+    color: #5A5A5A !important;
+    font-size: 10px !important;
+}
+
+button.addLibrary:hover span .libraryOption{
+    visibility: visible;
+}
 
 /* WallPaper Page End */

@@ -37,7 +37,7 @@
                                 </li>
                             </ul>
                             <div class="text-center">
-                                <a class="backBtn" href="index.html">
+                                <a class="backBtn" href="main.html">
                                     <img class="me-2" src="./assets/left_light.png" alt="Left Arrow">Back
                                 </a>
                             </div>
@@ -49,7 +49,7 @@
             <section class="mainPosition">
                 <div class="container custom_Container">
                     <div class="d-flex justify-content-center align-items-start gap-2 all_mb">
-                        <div class="sideBar">
+                        <div class="sideBar fontBak h-100">
                             <p class="text-center mb-3">Posted by</p>
                             <div class="d-flex justify-content-center align-items-center gap-5 mb-4">
                                 <div class="text-center" style="height: 75px; width: 75px;">
@@ -151,42 +151,54 @@
                            
     
                         </div>
-                        <div class="wallpaper">
-                            <div class="btnPosition d-flex justify-content-between align-items-center gap-3">
+                        <div class="wallpaper fontBak">
+                            <!-- <img class="img-fluid" src="./assets/wallpaper.png" alt="WallPaper"> -->
+                            <div class="btnPosition d-flex justify-content-end gap-3">
                                 <button class="addLibrary">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
-                                            fill="#9B9B9B">
-                                            <g clip-path="url(#clip0_987_947)">
-                                                <path
-                                                    d="M4.16671 6.25016H2.08337V20.8335C2.08337 21.9793 3.02087 22.9168 4.16671 22.9168H18.75V20.8335H4.16671V6.25016ZM20.8334 2.0835H8.33337C7.18754 2.0835 6.25004 3.021 6.25004 4.16683V16.6668C6.25004 17.8127 7.18754 18.7502 8.33337 18.7502H20.8334C21.9792 18.7502 22.9167 17.8127 22.9167 16.6668V4.16683C22.9167 3.021 21.9792 2.0835 20.8334 2.0835ZM20.8334 16.6668H8.33337V4.16683H20.8334V16.6668ZM13.5417 14.5835H15.625V11.4585H18.75V9.37516H15.625V6.25016H13.5417V9.37516H10.4167V11.4585H13.5417V14.5835Z" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_987_947">
-                                                    <rect width="25" height="25" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
+                                        <img src="./assets/library_add.png" alt="Add Library">
                                     </span>
                                 </button>
+                                <div class="libraryOption">
+                                    <div class="searchWallpaper mb-4">
+                                        <input class="fontBak w-100" type="search" placeholder="Search Collections">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-start align-items-start gap-1">
+                                        <button class="fontBak">
+                                            <img src="./assets/photo_library.png" alt="">
+                                            Call of Duty
+                                        </button>
+                                        <hr class="w-100">
+                                        <button class="fontBak">
+                                            <img src="./assets/photo_library.png" alt="">
+                                            World of Warcraft
+                                        </button>
+                                        <hr class="w-100">
+                                        <button class="fontBak">
+                                            <img src="./assets/photo_library.png" alt="">
+                                            League of Legends
+                                        </button>
+                                        <hr class="w-100">
+                                        <button class="fontBak">
+                                            <img src="./assets/photo_library.png" alt="">
+                                            Anime
+                                        </button>
+                                        <hr class="w-100">
+                                        <button class="fontBak">
+                                            <img src="./assets/photo_library.png" alt="">
+                                            Landscapes
+                                        </button>
+                                        <hr class="w-100">
+
+                                    </div>
+                                </div>
                                 <button class="like">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
-                                            fill="#9B9B9B">
-                                            <g clip-path="url(#clip0_987_814)">
-                                                <path
-                                                    d="M17.1875 3.125C15.375 3.125 13.6355 3.96875 12.5 5.30208C11.3646 3.96875 9.62504 3.125 7.81254 3.125C4.60421 3.125 2.08337 5.64583 2.08337 8.85417C2.08337 12.7917 5.62504 16 10.9896 20.875L12.5 22.2396L14.0105 20.8646C19.375 16 22.9167 12.7917 22.9167 8.85417C22.9167 5.64583 20.3959 3.125 17.1875 3.125ZM12.6042 19.3229L12.5 19.4271L12.3959 19.3229C7.43754 14.8333 4.16671 11.8646 4.16671 8.85417C4.16671 6.77083 5.72921 5.20833 7.81254 5.20833C9.41671 5.20833 10.9792 6.23958 11.5313 7.66667H13.4792C14.0209 6.23958 15.5834 5.20833 17.1875 5.20833C19.2709 5.20833 20.8334 6.77083 20.8334 8.85417C20.8334 11.8646 17.5625 14.8333 12.6042 19.3229Z" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_987_814">
-                                                    <rect width="25" height="25" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
+                                        <img src="./assets/likedgray.png" alt="Liked">
                                     </span>
                                 </button>
                             </div>
-                            <img class="img-fluid" src="./assets/wallpaper.png" alt="WallPaper">
+                            
                         </div>
                     </div>
                 </div>
@@ -214,7 +226,7 @@
                             <div class="col-12 col-md-4">
                                 <div class="tredImg">
                                     <a href="#">
-                                        <img class="img-fluid w-100" src="./assets/wallpaper.png" alt="img">
+                                        <img class="img-fluid w-100" src="./assets/wallpaper2.png" alt="img">
                                     </a>
                                 </div>
                             </div>
@@ -230,7 +242,7 @@
 
     <footer>
         <div class="container">
-            <div class="row">
+            <div class="row gy-2">
                 <div class="col-12 col-md-6">
                     <p>THE WALLPAPER SOCIETY</p>
                 </div>
@@ -265,7 +277,7 @@
                 </div>
             </div>
             <hr>
-            <div class="footerBottom d-flex justify-content-center align-items-center gap-4">
+            <div class="footerBottom d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">
                 <span>© The Wallpapers Society</span>
                 <span><a href="#">Community Rules</a></span>
                 <span><a href="#">Privacy Policy</a></span>
