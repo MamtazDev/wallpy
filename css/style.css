@@ -677,11 +677,11 @@ footer hr {
 }
 
 
-.addLibrary img,
+/* .addLibrary img,
 .like img {
     height: 25px;
     width: 25px;
-}
+} */
 
 .sideBar {
     width: 347px;
@@ -769,7 +769,14 @@ footer hr {
     background: rgba(39, 39, 39, 0.90);
     padding: 17px 28px;
     visibility: hidden;
+    opacity: 0;
 }
+
+.addLibrary:hover .libraryOption{
+    visibility: visible;
+    opacity: 1;
+}
+
 
 .searchWallpaper {
     z-index: 999999;
@@ -790,8 +797,5 @@ footer hr {
     font-size: 10px !important;
 }
 
-button.addLibrary:hover span .libraryOption{
-    visibility: visible;
-}
 
 /* WallPaper Page End */
