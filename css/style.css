@@ -222,8 +222,8 @@ header,
 .profileImg img {
     position: relative;
     z-index: 999999;
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
 }
 
@@ -349,7 +349,7 @@ header,
     /* box-shadow: 0 0 348px 218px #ffffff; */
 }
 
-.authShadowBottom{
+.authShadowBottom {
     position: relative;
     z-index: 5;
 }
@@ -379,7 +379,7 @@ header,
     -webkit-box-shadow: 0 0 348px 218px #2b2b2b;
     -moz-box-shadow: 0 0 348px 218px #2b2b2b;
     box-shadow: 0 0 348px 218px #2b2b2b;
-     /* box-shadow: 0 0 348px 218px #ffffff; */
+    /* box-shadow: 0 0 348px 218px #ffffff; */
 }
 
 /* Header End */
@@ -599,34 +599,35 @@ footer hr {
     gap: 50px;
 }
 
-.trendUpBtn,
 .allBtn {
-    border-radius: 23.5px;
+    border-radius: 24px;
     background: rgba(0, 0, 0, 0.20);
     padding: 4px;
 }
 
-.trendUpBtn button,
 .allBtn button {
-    padding: 10px 12px;
+    padding: 10px 25px;
     background: none;
     color: #FFF;
     font-family: var(--lato);
     font-size: 12px;
     font-weight: 400;
-    transition: 0.4s ease-in-out;
-}
-
-.allBtn button {
-    padding: 10px 36px !important;
+    border-radius: 24px;
+    transition: 0.9s ease-in-out;
 }
 
 
-.trendUpBtnActive,
-.trendUpBtn button:hover,
-.allBtn button:hover {
-    border-radius: 24px !important;
+.btnCustom button {
+    padding: 10px 12px !important;
+}
+
+.allBtnActive {
     background: rgba(0, 0, 0, 0.70) !important;
+}
+
+
+.allBtn button:hover {
+    background: rgba(0, 0, 0, 0.70);
 }
 
 .tredImg {
@@ -882,3 +883,64 @@ footer hr {
 }
 
 /* WallPaper Page End */
+
+
+/* Search Page Start */
+.searchHeader {
+    padding: 50px;
+    margin-bottom: 40px;
+}
+
+.searchHeader h1 {
+    font-size: 40px;
+}
+
+#sfwBtn,
+#sfwBtn:hover {
+    background: #0AB745 !important;
+}
+
+#riskBtn {
+    background: #FF8578;
+}
+
+#nsfBtn {
+    background: #FF1F3B;
+}
+
+.resParent {
+    position: relative;
+    transition: 0.4 ease-in-out;
+}
+
+.resChild {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(25px);
+    width: max-content;
+}
+
+.resChild {
+    color: #FDF516;
+    font-family: var(--lato);
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.resChild button {
+    padding: 7px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.40);
+    transition: 0.4s ease-in-out;
+}
+
+.resChild button:hover{
+    color: #FDF516;
+}
+
+/* Search Page End */
