@@ -13,61 +13,75 @@
 </head>
 
 <body>
-    <div class="mt_85 container d-flex justify-content-center gap-4">
-        <div class="text-center">
-            <a class="backBtn" href="index.html">
-                <img class="me-2" src="./assets/left_light.png" alt="Left Arrow">Back
-            </a>
-        </div>
-        <div class="brightBg d-flex justify-content-center gap-5 align-items-center" style="max-width: 978px;">
-            <div class="imgLogin d-flex flex-column justify-content-between align-items-center" 
-            style="background-image: url('./assets/registarBg.png');">
-                <p>
-                    Welcome to the Society
-                </p>
-                <div class="text-center">
-                    <span class="mb-2 d-block">
-                        Random facts about WPS
-                    </span>
-                    <div class="addedWall">
-                        <span style="color: #FFF;">
-                            You can get achievement points<br class="d-none d-md-block"> by uploading wallpapers
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div style="padding: 20px;">
-                <h1>
-                    THE WALLPAPER SOCIETY
-                </h1>
-                <div class="authtab text-center mx-auto">
-                    <button class="tabInner">Sign In</button>
-                    <button class="tabInner tabActive ">Sign Up</button>
-                </div>
-                <div>
-                    <form action="" class="d-flex flex-column justify-content-start gap-3 mb-5">
-                        <label for="name">Username</label>
-                        <input class="w-100" type="text" name="username" id="name"
-                            placeholder="Username">
-                        <label for="email">Email</label>
-                        <input class="w-100" type="mail" name="email" id="email"
-                            placeholder="wallpapers@thewallpapersociety.com">
-                        <label for="password">Password</label>
-                        <input class="w-100" type="password" name="" id="password" placeholder="*****************">
-                        <div class="text-center mt-4">
-                            <button class="darkBtn mb-2">Sign In</button>
+    <div class="bgShadowTop">
+        <div class="authShadowBottom">
+            <div class="mt_85 container auth_Container">
+                <div class="row">
+                    <div class="col-1 pe-0">
+                        <div class="text-center">
+                            <a class="backBtn" href="main.html">
+                                <img class="me-2" src="./assets/left_light.png" alt="Left Arrow">Back
+                            </a>
                         </div>
-                    </form>
-                    <div class="community d-flex justify-content-center gap-4 align-items-center pt-5">
-                        <a href="#">Community Rules</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms and Conditions</a>
+                    </div>
+        
+                    <div class="col-11">
+                        <div class="brightBg">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="imgLogin d-flex flex-column justify-content-between align-items-center"
+                                        style="background-image: url('./assets/registarBg.png');">
+                                        <p>
+                                            Welcome to the Society
+                                        </p>
+                                        <div class="text-center">
+                                            <span class="mb-2 d-block">
+                                                Random facts about WPS
+                                            </span>
+                                            <div class="addedWall">
+                                                <span style="color: #FFF;">
+                                                    You can get achievement points<br class="d-none d-md-block"> by uploading wallpapers
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <h1>
+                                            THE WALLPAPER SOCIETY
+                                        </h1>
+                                        <div class="authtab text-center mx-auto">
+                                            <button class="tabInner">Sign In</button>
+                                            <button class="tabInner tabActive ">Sign Up</button>
+                                        </div>
+                                        <form action="" style="margin-bottom: 150px;">
+                                            <label for="name">Username</label>
+                                            <input class="mb-3" type="text" name="username" id="name" placeholder="Username">
+                                            <label for="email">Email</label>
+                                            <input class="mb-3" type="mail" name="email" id="email"
+                                                placeholder="wallpapers@thewallpapersociety.com">
+                                            <label for="password">Password</label>
+                                            <input class="" type="password" name="" id="password" placeholder="*****************">
+                                            <div class="text-center mt-4">
+                                                <button class="darkBtn mb-2">Sign In</button>
+                                            </div>
+                                        </form>
+                                      
+                                        <div class="community d-flex justify-content-center gap-4 align-items-center mt-5">
+                                            <a href="#">Community Rules</a>
+                                            <a href="#">Privacy Policy</a>
+                                            <a href="#">Terms and Conditions</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

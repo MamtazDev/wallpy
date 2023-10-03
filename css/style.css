@@ -59,8 +59,10 @@ input {
     max-width: 1800px;
 }
 
-.auth_Container{
+.auth_Container {
     max-width: 1090px;
+    position: relative;
+    z-index: 9999999;
 }
 
 .mt_85 {
@@ -71,7 +73,7 @@ input {
     margin-bottom: 50px;
 }
 
-.fontBak{
+.fontBak {
     font-family: var(--bak);
     font-weight: 400;
     color: #FFF;
@@ -231,7 +233,7 @@ header,
     background-color: #000;
 }
 
-.accountParent{
+.accountParent {
     position: relative;
 }
 
@@ -297,6 +299,7 @@ header,
     -webkit-box-shadow: 0 0 348px 218px #25242c;
     -moz-box-shadow: 0 0 348px 218px #25242c;
     box-shadow: 0 0 348px 218px #25242c;
+    /* box-shadow: 0 0 348px 218px #2200ff; */
 }
 
 .bgShadowTop::after {
@@ -310,9 +313,10 @@ header,
     -webkit-box-shadow: 0 0 348px 218px #545454;
     -moz-box-shadow: 0 0 348px 218px #545454;
     box-shadow: 0 0 348px 218px #545454;
+    /* box-shadow: 0 0 348px 218px #ff0000; */
 }
 
-.bgShadowBottom{
+.bgShadowBottom {
     position: relative;
     z-index: 5;
 }
@@ -343,6 +347,39 @@ header,
     -moz-box-shadow: 0 0 348px 218px #000;
     box-shadow: 0 0 348px 218px #000;
     /* box-shadow: 0 0 348px 218px #ffffff; */
+}
+
+.authShadowBottom{
+    position: relative;
+    z-index: 5;
+}
+
+.authShadowBottom::before {
+    position: absolute;
+    content: "";
+    left: 30%;
+    bottom: 6%;
+    z-index: -5;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 348px 218px #2b2b2b;
+    -moz-box-shadow: 0 0 348px 218px #2b2b2b;
+    box-shadow: 0 0 348px 218px #2b2b2b;
+    /* box-shadow: 0 0 348px 218px #ffffff; */
+}
+
+.authShadowBottom::after {
+    position: absolute;
+    content: "";
+    right: 30%;
+    bottom: 6%;
+    z-index: -5;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 348px 218px #2b2b2b;
+    -moz-box-shadow: 0 0 348px 218px #2b2b2b;
+    box-shadow: 0 0 348px 218px #2b2b2b;
+     /* box-shadow: 0 0 348px 218px #ffffff; */
 }
 
 /* Header End */
@@ -504,6 +541,14 @@ footer hr {
     font-size: 12px;
     border-radius: 10px;
     background: #000;
+}
+
+.brightBg form a {
+    transition: 0.4s ease;
+}
+
+.brightBg form a:hover {
+    text-decoration: underline;
 }
 
 .socialBtn {
@@ -722,7 +767,8 @@ footer hr {
     font-size: 20px;
 }
 
-.sideBar hr, .libraryOption hr {
+.sideBar hr,
+.libraryOption hr {
     color: #939393;
 }
 
@@ -744,16 +790,15 @@ footer hr {
     transition: 0.4s ease-in-out;
 }
 
-.downLoadBtn:hover
- {
+.downLoadBtn:hover {
     opacity: .9;
 }
 
-.listBtn button{
+.listBtn button {
     transition: 0.4s ease-in-out;
 }
 
-.listBtn button:hover{
+.listBtn button:hover {
     color: #FDF516 !important;
 }
 
@@ -777,7 +822,9 @@ footer hr {
 }
 
 
-.searchWallpaper input, .libraryOption, .libraryOption button{
+.searchWallpaper input,
+.libraryOption,
+.libraryOption button {
     font-size: 12px;
 }
 
@@ -797,11 +844,11 @@ footer hr {
     opacity: 0;
 }
 
-.addLibrary .libraryOption{
+.addLibrary .libraryOption {
     transition: 0.4s ease-in-out;
 }
 
-.addLibrary:hover .libraryOption{
+.addLibrary:hover .libraryOption {
     visibility: visible;
     opacity: 1;
 }
@@ -826,11 +873,11 @@ footer hr {
     font-size: 10px !important;
 }
 
-.libraryOption button{
+.libraryOption button {
     transition: 0.4s ease-in-out;
 }
 
-.libraryOption button:hover{
+.libraryOption button:hover {
     color: #FDF516;
 }
 
