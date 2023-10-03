@@ -59,6 +59,10 @@ input {
     max-width: 1800px;
 }
 
+.auth_Container{
+    max-width: 1090px;
+}
+
 .mt_85 {
     margin-top: 85px;
 }
@@ -479,12 +483,14 @@ footer hr {
     color: #373737;
     font-size: 12px;
     display: block;
+    margin-bottom: 16px;
 }
 
 .brightBg form input {
     border-radius: 10px;
     background: #FFF;
     padding: 14px;
+    width: 326px;
 }
 
 .brightBg form input::placeholder {
