@@ -67,9 +67,9 @@ input {
 
 .search_Container {
     max-width: 1756px;
-    position: relative;
-    z-index: 9999999;
 }
+
+
 
 .mt_85 {
     margin-top: 85px;
@@ -388,6 +388,39 @@ header,
     content: "";
     right: 30%;
     bottom: 6%;
+    z-index: -5;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 348px 218px #2b2b2b;
+    -moz-box-shadow: 0 0 348px 218px #2b2b2b;
+    box-shadow: 0 0 348px 218px #2b2b2b;
+    /* box-shadow: 0 0 348px 218px #ffffff; */
+}
+
+.searchShadowBottom {
+    position: relative;
+    z-index: 5;
+}
+
+.searchShadowBottom::before {
+    position: absolute;
+    content: "";
+    left: 10%;
+    bottom: 1%;
+    z-index: -5;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 348px 218px #2b2b2b;
+    -moz-box-shadow: 0 0 348px 218px #2b2b2b;
+    box-shadow: 0 0 348px 218px #2b2b2b;
+    /* box-shadow: 0 0 348px 218px #ffffff; */
+}
+
+.searchShadowBottom::after {
+    position: absolute;
+    content: "";
+    right: 10%;
+    bottom: 1%;
     z-index: -5;
     background: transparent;
     border-radius: 50%;
@@ -903,7 +936,6 @@ footer hr {
 /* Search Page Start */
 .searchHeader {
     padding: 50px;
-    margin-bottom: 40px;
 }
 
 .searchHeader h1 {
@@ -939,7 +971,11 @@ footer hr {
     width: max-content;
     visibility: hidden;
     opacity: 0;
-    transition: 0.4s ease-in-out;
+    z-index: 2 !important;
+}
+
+.searchMain {
+    position: relative;
     z-index: 1;
 }
 
@@ -1026,10 +1062,19 @@ footer hr {
     transition: 0.4s ease-in-out;
 }
 
-.loadBtn:hover{
+.loadBtn:hover {
     opacity: .9;
     background-color: #292e32 !important;
 
 }
 
 /* Search Page End */
+
+/* Profile Page Start */
+
+.ownWall {
+    width: 252px !important;
+    height: 138px !important;
+}
+
+/* Profile Page End */
