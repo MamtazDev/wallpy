@@ -16,7 +16,7 @@
     <main>
         <div class="bgShadowTop">
             <header>
-                <div class="container">
+                <div class="container search_Container">
                     <div class="searchHeader">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <div></div>
@@ -34,107 +34,224 @@
                 </div>
             </header>
 
-            <div class="bgShadowBottom">
-                <div class="container">
-                    <div class="trendingHeader d-flex flex-wrap justify-content-start align-items-center mb-3">
-                        <div class="allBtn btnCustom">
-                            <button class="allBtnActive">
-                                <img src="./assets/fire.png" alt="Trending">
-                                Trending
-                            </button>
-                            <button class="">
-                                <img src="./assets/chart.png" alt="Upcoming">
-                                Upcoming
-                            </button>
-                        </div>
-
-                        <div class="allBtn">
-                            <button class="allBtnActive">
-                                All
-                            </button>
-                            <button>
-                                Illustration
-                            </button>
-                            <button>
-                                AI
-                            </button>
-                            <button>
-                                Photography
-                            </button>
-                        </div>
-
-                        <div class="allBtn">
-                            <button id="sfwBtn">
-                                SFW
-                            </button>
-                            <button id="riskBtn">
-                                RISKY
-                            </button>
-                            <button id="nsfBtn">
-                                NSFW
-                            </button>
-                        </div>
-                        <div class="allBtn">
-                            <div class="resParent">
-                                <button class="formSelect">Resolution
-                                    <i class="fa fa-caret-down ps-1"></i>
+            <div class="">
+                <section>
+                    <div class="container search_Container">
+                        <div class="trendingHeader d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 mb-3">
+                            <div class="allBtn btnCustom">
+                                <button class="allBtnActive">
+                                    <img src="./assets/fire.png" alt="Trending">
+                                    Trending
                                 </button>
-                                <div class="resChild">
-                                    <div class="d-flex justify-content-center align-items-start gap-3 mb-4">
-                                        <div class="d-flex flex-column align-items-center gap-2">
-                                            <p class="text-nowrap">Ultra Wide</p>
-                                            <button>2560 × 1080</button>
-                                            <button>3440 × 1440</button>
-                                            <button>3840 × 1600</button>
+                                <button class="">
+                                    <img src="./assets/chart.png" alt="Upcoming">
+                                    Upcoming
+                                </button>
+                            </div>
+                            <div class="allBtn">
+                                <button class="allBtnActive">
+                                    All
+                                </button>
+                                <button>
+                                    Illustration
+                                </button>
+                                <button>
+                                    AI
+                                </button>
+                                <button>
+                                    Photography
+                                </button>
+                            </div>
+                            <div class="allBtn">
+                                <button id="sfwBtn">
+                                    SFW
+                                </button>
+                                <button id="riskBtn">
+                                    RISKY
+                                </button>
+                                <button id="nsfBtn">
+                                    NSFW
+                                </button>
+                            </div>
+                            <div class="allBtn">
+                                <div class="resParent">
+                                    <button>Resolution
+                                        <i class="fa fa-caret-down ps-1"></i>
+                                    </button>
+                                    <div class="resChild">
+                                        <div class="d-flex justify-content-center align-items-start gap-3 mb-4">
+                                            <div class="d-flex flex-column align-items-center gap-2">
+                                                <p class="text-nowrap">Ultra Wide</p>
+                                                <button>2560 × 1080</button>
+                                                <button>3440 × 1440</button>
+                                                <button>3840 × 1600</button>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center gap-2">
+                                                <p>16:9</p>
+                                                <button>1280 × 720</button>
+                                                <button>1600 × 900</button>
+                                                <button>1920 × 1080</button>
+                                                <button>2560 × 1440</button>
+                                                <button>3840 × 2160</button>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center gap-2">
+                                                <p>16:10</p>
+                                                <button>1280 × 800</button>
+                                                <button>1600 × 1000</button>
+                                                <button>1920 × 1200</button>
+                                                <button>2560 × 1600</button>
+                                                <button>3840 × 2400</button>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center gap-2">
+                                                <p>4:3</p>
+                                                <button>1280 × 960</button>
+                                                <button>1600 × 1200</button>
+                                                <button>1920 × 1440</button>
+                                                <button>2560 × 1920</button>
+                                                <button>3840 × 2880</button>
+                                            </div>
+                                            <div class="d-flex flex-column align-items-center gap-2">
+                                                <p>16:9</p>
+                                                <button>1280 × 1024</button>
+                                                <button>1600 × 1280</button>
+                                                <button>1920 × 1536</button>
+                                                <button>2560 × 2048</button>
+                                                <button>3840 × 3072</button>
+                                            </div>
                                         </div>
-                                        <div class="d-flex flex-column align-items-center gap-2">
-                                            <p>16:9</p>
-                                            <button>1280 × 720</button>
-                                            <button>1600 × 900</button>
-                                            <button>1920 × 1080</button>
-                                            <button>2560 × 1440</button>
-                                            <button>3840 × 2160</button>
+                                        <div class="mb-4">
+                                            <p class="text-white mb-1">Auto Detection</p>
+                                            <p class="text-white">Your screen resolution is 1920 × 1080.</p>
                                         </div>
-                                        <div class="d-flex flex-column align-items-center gap-2">
-                                            <p>16:10</p>
-                                            <button>1280 × 800</button>
-                                            <button>1600 × 1000</button>
-                                            <button>1920 × 1200</button>
-                                            <button>2560 × 1600</button>
-                                            <button>3840 × 2400</button>
-                                        </div>
-                                        <div class="d-flex flex-column align-items-center gap-2">
-                                            <p>4:3</p>
-                                            <button>1280 × 960</button>
-                                            <button>1600 × 1200</button>
-                                            <button>1920 × 1440</button>
-                                            <button>2560 × 1920</button>
-                                            <button>3840 × 2880</button>
-                                        </div>
-                                        <div class="d-flex flex-column align-items-center gap-2">
-                                            <p>16:9</p>
-                                            <button>1280 × 1024</button>
-                                            <button>1600 × 1280</button>
-                                            <button>1920 × 1536</button>
-                                            <button>2560 × 2048</button>
-                                            <button>3840 × 3072</button>
-                                        </div>
+                                        <p class="text-white mb-2">Custom Resolution</p>
+                                        <form action="">
+                                            <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
+                                                <!-- <div> -->
+                                                <input type="text" name="width" placeholder="Width">
+                                                <input type="text" name="height" placeholder="Height">
+                                            </div>
+                                            <button class="searchBtn">
+                                                Search
+                                            </button>
+                                        </form>
                                     </div>
-                                    <div class="mb-4">
-                                        <p class="text-white mb-1">Auto Detection</p>
-                                        <p class="text-white">Your screen resolution is 1920 × 1080.</p>
-                                    </div>
-                                    <p class="text-white mb-2">Custom Resolution</p>
-                                    <div>
-                                        
-                                    </div>
-
                                 </div>
                             </div>
+                            <div class="allBtn">
+                                <div class="resParent">
+                                    <button>Screen Type
+                                        <i class="fa fa-caret-down ps-1"></i>
+                                    </button>
+                                    <div class="resChild lgFont deviceBtn" style="max-width: 468px;">
+                                        <div class="d-flex flex-wrap align-items-start gap-2">
+                                            <button>
+                                                <img class="me-1" src="./assets/desktop_windows.png" alt="Desktop">
+                                                Desktop
+                                            </button>
+                                            <button>
+                                                <img class="me-1" src="./assets/phone_iphone.png" alt="Phones">
+                                                Phones
+                                            </button>
+                                            <button>
+                                                <img class="me-1" src="./assets/tablet_mac.png" alt="Tablets">
+                                                Tablets
+                                            </button>
+                                            <button>
+                                                <img class="me-1" src="./assets/videogame_asset.png" alt="Handhelds">
+                                                Handhelds
+                                            </button>
+                                            <button>
+                                                <img class="me-1" src="./assets/devices_other.png" alt="Other">
+                                                Other
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="allBtn">
+                                <div class="resParent">
+                                    <button class="formSelect">Sort By
+                                        <i class="fa fa-caret-down ps-1"></i>
+                                    </button>
+                                    <div class="resChild">
+                                        <div class="lgFont d-flex flex-column align-items-center gap-2">
+                                            <button style="background: transparent;">Random</button>
+                                            <button style="background: transparent;">Views</button>
+                                            <button style="background: transparent;">Favorites</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="allBtn">
+                                <div class="resParent">
+                                    <button>Upload Date
+                                        <i class="fa fa-caret-down ps-1"></i>
+                                    </button>
+                                    <div class="resChild">
+                                        <div class="lgFont d-flex flex-column align-items-center gap-2">
+                                            <button style="background: transparent;">Today</button>
+                                            <button style="background: transparent;">This week</button>
+                                            <button style="background: transparent;">This Month</button>
+                                            <button style="background: transparent;">This year</button>
+                                            <button style="background: transparent;">All time</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="allBtn">
+                                <button>Keywords
+                                    <i class="fa fa-search ms-1"></i>
+                                </button>
+                            </div>
+                            <div class="autorenew">
+                                <button>
+                                    <img src="./assets/autorenew.png" alt="Autorenew">
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="w-100">
+                    </div>
+                </section>
+
+
+                <section>
+                    <div class="container search_Container">
+                        <div class="d-flex flex-wrap align-items-center gap-3 mb-5">
+                            <div class="tredImg">
+                                <img class="searchImg" class="img-fluid" src="./assets/trending2.png" alt="img">
+                            </div>
+                            <div class="tredImg">
+                                <img class="searchImg" class="img-fluid" src="./assets/trending2.png" alt="img">
+                            </div>
+                            <div class="tredImg">
+                                <img class="searchImg" class="img-fluid" src="./assets/trending2.png" alt="img">
+                            </div>
+                            <div class="tredImg">
+                                <img class="searchImg" class="img-fluid" src="./assets/trending2.png" alt="img">
+                            </div>
+                            <div class="tredImg">
+                                <img class="searchImg" class="img-fluid" src="./assets/trending2.png" alt="img">
+                            </div>
+                            <div class="tredImg">
+                                <img class="searchImg" class="img-fluid" src="./assets/trending2.png" alt="img">
+                            </div>
+                            <div class="tredImg">
+                                <img class="searchImg" class="img-fluid" src="./assets/trending2.png" alt="img">
+                            </div>
+                            <div class="tredImg">
+                                <img class="searchImg" class="img-fluid" src="./assets/trending2.png" alt="img">
+                            </div>
+                            <div class="tredImg">
+                                <img class="searchImg" class="img-fluid" src="./assets/trending2.png" alt="img">
+                            </div>
+                        </div>
+                        <div>
+                            <span class="d-block text-center">
+                                <button class="loadBtn fontBak">Load More</button>
+                            </span>
                         </div>
                     </div>
-                </div>
-
+                </section>
             </div>
         </div>
 
