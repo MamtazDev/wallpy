@@ -1077,4 +1077,31 @@ footer hr {
     height: 138px !important;
 }
 
+.coverImg,
+coverImg img {
+    width: 1747px;
+    height: 365px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.ownImg,
+.ownImg img {
+    width: 125px;
+    height: 125px;
+    border-radius: 125px;
+}
+
+.ownImg img {
+    /* position: absolute;
+    top: 30%;
+    left: 3%; */
+}
+
+.ownImg span {
+    color: #939393;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
 /* Profile Page End */
