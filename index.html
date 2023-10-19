@@ -9,100 +9,588 @@
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <title>Login</title>
+    <title>Home</title>
 </head>
 
 <body>
-    <div class="bgShadowTop">
-        <div class="authShadowBottom">
-            <div class="mt_85 container auth_Container">
-                <div class="row">
-                    <div class="col-1 pe-0">
-                        <div class="text-center">
-                            <a class="backBtn" href="main.html">
-                                <img class="me-2" src="./assets/left_light.png" alt="Left Arrow">Back
-                            </a>
+    <main>
+        <div class="bgShadowTop">
+            <header>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./assets/logo.png" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span>
+                                <i class="fa fa-bars"></i>
+                            </span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                                <li class="nav-item">
+                                    <form class="d-flex">
+                                        <div class="searchNav">
+                                            <input class="w-100" type="search"
+                                                placeholder="Find your next wallpaper...">
+                                        </div>
+                                    </form>
+                                </li>
+                                <li class="nav-item">
+                                    <ul class="navBg d-flex justify-content-center gap-3">
+                                        <li class="accountParent">
+                                            <a class="nav-link" href="#">Account</a>
+                                            <div class="accountChild">
+                                                <div class="row navBorder">
+                                                    <div class="col-6">
+                                                        <div class="childInner d-flex flex-column gap-3 text-nowrap"
+                                                            style="border-right: 1px solid #292D31;">
+                                                            <a href="login.html">
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" viewBox="0 0 14 14" fill="none">
+                                                                        <path
+                                                                            d="M6.66667 6.66667C8.50833 6.66667 10 5.175 10 3.33333C10 1.49167 8.50833 0 6.66667 0C4.825 0 3.33333 1.49167 3.33333 3.33333C3.33333 5.175 4.825 6.66667 6.66667 6.66667ZM6.66667 8.33333C4.44167 8.33333 0 9.45 0 11.6667V13.3333H13.3333V11.6667C13.3333 9.45 8.89167 8.33333 6.66667 8.33333Z"
+                                                                            fill="white" />
+                                                                    </svg>
+                                                                </span>
+                                                                Login
+                                                            </a>
+                                                            <a href="profile.html">Profile</a>
+                                                            <a href="#">Favorites</a>
+                                                            <a href="#">Collections</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6" s>
+                                                        <div class="childInner d-flex flex-column gap-3 text-nowrap">
+                                                            <a href="register.html">
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="17"
+                                                                        height="15" viewBox="0 0 17 15" fill="none">
+                                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                            d="M5.5 11.1663L8 8.71634C7.675 8.68301 7.43333 8.66634 7.16667 8.66634C4.94167 8.66634 0.5 9.78301 0.5 11.9997V13.6663H8L5.5 11.1663ZM7.16667 6.99967C9.00833 6.99967 10.5 5.50801 10.5 3.66634C10.5 1.82467 9.00833 0.333008 7.16667 0.333008C5.325 0.333008 3.83333 1.82467 3.83333 3.66634C3.83333 5.50801 5.325 6.99967 7.16667 6.99967Z"
+                                                                            fill="white" />
+                                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                            d="M10.8917 14.0827L8 11.166L9.16667 9.99102L10.8917 11.7243L15.1667 7.41602L16.3333 8.59102L10.8917 14.0827Z"
+                                                                            fill="white" />
+                                                                    </svg>
+                                                                </span>
+                                                                Register
+                                                            </a>
+                                                            <a href="#">Messages</a>
+                                                            <a href="#">The Vault</a>
+                                                            <a href="setting.html">Settings</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="logoutBtn mx-auto">
+                                                    <img src="./assets/logout.png" alt="Logout">
+                                                    Log Out
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span style="border-right: 1px solid #292D31;"></span>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="#">Upload</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="profileMenu">
+                                <button>
+                                    <img src="./assets/profileLogout.png" alt="Logout">
+                                </button>
+
+                                <a href="#" class="lock">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <g clip-path="url(#clip0_1651_1279)">
+                                                <path
+                                                    d="M15.0002 6.66634H14.1668V4.99967C14.1668 2.69967 12.3002 0.833008 10.0002 0.833008C7.70016 0.833008 5.8335 2.69967 5.8335 4.99967V6.66634H5.00016C4.0835 6.66634 3.3335 7.41634 3.3335 8.33301V16.6663C3.3335 17.583 4.0835 18.333 5.00016 18.333H15.0002C15.9168 18.333 16.6668 17.583 16.6668 16.6663V8.33301C16.6668 7.41634 15.9168 6.66634 15.0002 6.66634ZM10.0002 14.1663C9.0835 14.1663 8.3335 13.4163 8.3335 12.4997C8.3335 11.583 9.0835 10.833 10.0002 10.833C10.9168 10.833 11.6668 11.583 11.6668 12.4997C11.6668 13.4163 10.9168 14.1663 10.0002 14.1663ZM12.5835 6.66634H7.41683V4.99967C7.41683 3.57467 8.57516 2.41634 10.0002 2.41634C11.4252 2.41634 12.5835 3.57467 12.5835 4.99967V6.66634Z"
+                                                    fill="#D9D9D9" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1651_1279">
+                                                    <rect width="20" height="20" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                </a>
+
+                                <a href="#" class="favourite">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <g clip-path="url(#clip0_1651_1280)">
+                                                <path
+                                                    d="M9.99984 17.7917L8.7915 16.6917C4.49984 12.8 1.6665 10.2333 1.6665 7.08333C1.6665 4.51667 3.68317 2.5 6.24984 2.5C7.69984 2.5 9.0915 3.175 9.99984 4.24167C10.9082 3.175 12.2998 2.5 13.7498 2.5C16.3165 2.5 18.3332 4.51667 18.3332 7.08333C18.3332 10.2333 15.4998 12.8 11.2082 16.7L9.99984 17.7917Z"
+                                                    fill="#D9D9D9" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1651_1280">
+                                                    <rect width="20" height="20" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                </a>
+
+                                <a href="accountSetting.html" class="accSetting">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <g clip-path="url(#clip0_1651_1277)">
+                                                <path
+                                                    d="M9.99984 1.66699C5.39984 1.66699 1.6665 5.40033 1.6665 10.0003C1.6665 14.6003 5.39984 18.3337 9.99984 18.3337C14.5998 18.3337 18.3332 14.6003 18.3332 10.0003C18.3332 5.40033 14.5998 1.66699 9.99984 1.66699ZM9.99984 4.16699C11.3832 4.16699 12.4998 5.28366 12.4998 6.66699C12.4998 8.05033 11.3832 9.16699 9.99984 9.16699C8.6165 9.16699 7.49984 8.05033 7.49984 6.66699C7.49984 5.28366 8.6165 4.16699 9.99984 4.16699ZM9.99984 16.0003C7.9165 16.0003 6.07484 14.9337 4.99984 13.317C5.02484 11.6587 8.33317 10.7503 9.99984 10.7503C11.6582 10.7503 14.9748 11.6587 14.9998 13.317C13.9248 14.9337 12.0832 16.0003 9.99984 16.0003Z"
+                                                    fill="#D9D9D9" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1651_1277">
+                                                    <rect width="20" height="20" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                </a>
+
+                                <a href="profile.html">
+                                    <div class="profileImg text-center">
+                                        <img src="./assets/profile.png" alt="Profile Image">
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-        
-                    <div class="col-11">
-                        <div class="brightBg">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="imgLogin d-flex flex-column justify-content-between align-items-center"
-                                        style="background-image: url('./assets/loginImg.png');">
-                                        <p>
-                                            Welcome back; we missed you.
-                                        </p>
-                                        <div class="text-center">
-                                            <span class="mb-2 d-block">
-                                                Random facts since you were gone
-                                            </span>
-                                            <div class="addedWall">
-                                                <span style="color: #FFF;">
-                                                    1348 wallpapers were added
-                                                </span>
-                                            </div>
-                                        </div>
+                </nav>
+            </header>
+
+            <!-- Trending Start -->
+            <section>
+                <div class="container">
+                    <div class="trending all_mb">
+                        <div class="trendingHeader d-flex flex-wrap justify-content-start align-items-center mb-3">
+                            <div class="allBtn btnCustom">
+                                <button class="allBtnActive">
+                                    <img src="./assets/fire.png" alt="Trending">
+                                    Trending
+                                </button>
+                                <button>
+                                    <img src="./assets/chart.png" alt="Upcoming">
+                                    Upcoming
+                                </button>
+                            </div>
+                            <div class="allBtn">
+                                <button class="allBtnActive">
+                                    All
+                                </button>
+                                <button>
+                                    Illustration
+                                </button>
+                                <button>
+                                    AI
+                                </button>
+                                <button>
+                                    Photography
+                                </button>
+                            </div>
+                        </div>
+                        <div class="trendingInner mb-4">
+                            <div class="row gy-4">
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <a href="wallpaper.html">
+                                            <img class="img-fluid" src="./assets/trending.png" alt="img">
+                                        </a>
                                     </div>
                                 </div>
-            
-                                <div class="col-6">
-                                    <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <h1>
-                                            THE WALLPAPER SOCIETY
-                                        </h1>
-                                        <div class="authtab text-center mx-auto">
-                                            <button class="tabInner tabActive">Sign In</button>
-                                            <!-- <button class="tabInner">Sign Up</button> -->
-                                            <button class="tabInner">
-                                                <a class="text-dark" href="register.html">Sign Up</a>
-                                            </button>
-                                        </div>
-                                        <form action="" class="mb-5">
-                                            <label for="email">Email</label>
-                                            <input class="mb-3" type="mail" name="email" id="email"
-                                                placeholder="wallpapers@thewallpapersociety.com">
-                                            <label for="password">Password</label>
-                                            <input type="password" name="" id="password"
-                                                placeholder="*****************">
-                                            <div class="text-center mt-4">
-                                                <button class="darkBtn mb-2">
-                                                    <a class="text-white" href="main.html">
-                                                        Sign In
-                                                    </a>
-                                                </button>
-                                                <a href="forgetpassword.html" class="d-block" style="color: #373737; font-size: 10px;">Can’t login</a>
-                                            </div>
-                                        </form>
-                                        <div class="socialBtn d-flex flex-column justify-content-center align-items-center gap-2">
-                                            <button class="w-100" style="background:  #1877F2;">
-                                                <img src="./assets/fbsignin.png" alt="Facebook">
-                                                Sign In with Facebook
-                                            </button>
-                                            <button class="w-100" style="background: #FFF; color:#CECECE;">
-                                                <img src="./assets/googlesignIn.png" alt="Google">
-                                                Sign In with Google
-                                            </button>
-                                            <button class="w-100" style="background: #000;">
-                                                <img src="./assets/applesignIn.png" alt="Apple">
-                                                Sign In with Apple
-                                            </button>
-                                        </div>
-                                        <div class="community d-flex justify-content-center gap-4 align-items-center mt-5">
-                                            <a href="#">Community Rules</a>
-                                            <a href="#">Privacy Policy</a>
-                                            <a href="#">Terms and Conditions</a>
-                                        </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <a href="wallpaper.html">
+                                            <img class="img-fluid" src="./assets/trending2.png" alt="img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <a href="wallpaper.html">
+                                            <img class="img-fluid" src="./assets/trending3.png" alt="img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <a href="wallpaper.html">
+                                            <img class="img-fluid" src="./assets/trending4.png" alt="img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <a href="wallpaper.html">
+                                            <img class="img-fluid" src="./assets/trending2.png" alt="img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <a href="wallpaper.html">
+                                            <img class="img-fluid" src="./assets/trending4.png" alt="img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <a href="wallpaper.html">
+                                            <img class="img-fluid" src="./assets/trending.png" alt="img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="tredImg">
+                                        <a href="wallpaper.html">
+                                            <img class="img-fluid" src="./assets/trending3.png" alt="img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="moreBtn">
+                            More Wallpapers
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Trending End -->
+        </div>
+
+        <div class="bgShadowMiddle">
+            <!-- The Official Wallpapers Start -->
+            <section>
+                <div class="container all_mb">
+                    <h2 class="mb-4">The Official Wallpapers</h2>
+                    <div class="row gy-4">
+                        <div class="col-12 col-md-6">
+                            <div class="staff" style="height: 535px;">
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/trending2.png" alt="Img"
+                                        style="height: 535px;" />
+                                    <!-- <img class="img-fluid" src="./assets/official.png" alt="Img" style="height: 535px;" /> -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex flex-column gap-4">
+                                <div class="staff">
+                                    <a href="#">
+                                        <img class="img-fluid w-100" src="./assets/staff2.png" alt="Img"
+                                            style="height: 253px;" />
+                                    </a>
+                                </div>
+                                <div class="staff">
+                                    <a href="#">
+                                        <img class="img-fluid w-100" src="./assets/staff3.png" alt="Img"
+                                            style="height: 253px;" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- The Official Wallpapers End -->
+
+            <!-- Featured Wallpapers Start -->
+            <section>
+                <div class="container">
+                    <div class="feature all_mb">
+                        <h2 class="mb-4">Featured Wallpapers</h2>
+                        <div class="row gy-4">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="tredImg">
+                                    <a href="#">
+                                        <img class="img-fluid w-100" src="./assets/feature.png" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="tredImg">
+                                    <a href="#">
+                                        <img class="img-fluid w-100" src="./assets/feature.png" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="tredImg">
+                                    <a href="#">
+                                        <img class="img-fluid w-100" src="./assets/feature.png" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Featured Wallpapers End -->
+
+            <!-- Featured Artists Start -->
+            <section>
+                <div class="container all_mb">
+                    <h2 class="mb-4">Featured Artists</h2>
+                    <div class="artist">
+                        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-4">
+                            <div class="d-flex flex-column gap-2 align-items-center">
+                                <img class="proImg mb-3" src="./assets/artist.png" alt="Profile" />
+                                <div class="profileInner">
+                                    <div class="d-flex justify-content-start gap-1 align-items-center mb-2">
+                                        <img src="./assets/Verified.png" alt="img" />
+                                        <p>Diberkato / Ilustrator</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <a href="#">
+                                            <img src="./assets/twitter.png" alt="Twitter" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/behance.png" alt="Behance" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/dribble.png" alt="Dribble" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/instagram.png" alt="Instragram" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <a class="viewProfile" href="#" style="font-size: 10px;">View Profile</a>
+                            </div>
+                            <div class="d-flex flex-column gap-2 align-items-center">
+                                <img class="proImg mb-3" src="./assets/artist.png" alt="Profile">
+                                <div class="profileInner">
+                                    <div class="d-flex justify-content-start gap-1 align-items-center mb-2">
+                                        <img src="./assets/Verified.png" alt="img">
+                                        <p>Diberkato / Ilustrator</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <a href="#">
+                                            <img src="./assets/twitter.png" alt="Twitter">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/behance.png" alt="Behance">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/dribble.png" alt="Dribble">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/instagram.png" alt="Instragram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <a class="viewProfile" href="#" style="font-size: 10px;">View Profile</a>
+                            </div>
+                            <div class="d-flex flex-column gap-2 align-items-center">
+                                <img class="proImg mb-3" src="./assets/artist.png" alt="Profile" />
+                                <div class="profileInner">
+                                    <div class="d-flex justify-content-start gap-1 align-items-center mb-2">
+                                        <img src="./assets/Verified.png" alt="img" />
+                                        <p>Diberkato / Ilustrator</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <a href="#">
+                                            <img src="./assets/twitter.png" alt="Twitter" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/behance.png" alt="Behance" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/dribble.png" alt="Dribble" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/instagram.png" alt="Instragram" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <a class="viewProfile" href="#" style="font-size: 10px;">View Profile</a>
+                            </div>
+                            <div class="d-flex flex-column gap-2 align-items-center">
+                                <img class="proImg mb-3" src="./assets/artist.png" alt="Profile" />
+                                <div class="profileInner">
+                                    <div class="d-flex justify-content-start gap-1 align-items-center mb-2">
+                                        <img src="./assets/Verified.png" alt="img">
+                                        <p>Diberkato / Ilustrator</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <a href="#">
+                                            <img src="./assets/twitter.png" alt="Twitter" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/behance.png" alt="Behance" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/dribble.png" alt="Dribble" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/instagram.png" alt="Instragram" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <a class="viewProfile" href="#" style="font-size: 10px;">View Profile</a>
+                            </div>
+                            <div class="d-flex flex-column gap-2 align-items-center">
+                                <img class="proImg mb-3" src="./assets/artist.png" alt="Profile" />
+                                <div class="profileInner">
+                                    <div class="d-flex justify-content-start gap-1 align-items-center mb-2">
+                                        <img src="./assets/Verified.png" alt="img" />
+                                        <p>Diberkato / Ilustrator</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <a class="socialLink overflow-hidden" href="#">
+                                            <img src="./assets/twitter.png" alt="Twitter" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/behance.png" alt="Behance" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/dribble.png" alt="Dribble" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/instagram.png" alt="Instragram" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <a class="viewProfile" href="#" style="font-size: 10px;">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Featured Artists End -->
+        </div>
+
+        <div class="bgShadowbottom">
+            <!-- The WPS Staff Picks Start -->
+            <section>
+                <div class="container all_mb">
+                    <h2 class="mb-4">The <span style="color: #FDF516;">WPS</span> Staff Picks</h2>
+                    <div class="row gy-4">
+                        <div class="col-12 col-md-6">
+                            <div class="staff" style="height: 535px;">
+                                <a href="#">
+                                    <!-- <img class="img-fluid" src="./assets/trending2.png" alt="Img" style="height: 535px;" /> -->
+                                    <img class="img-fluid" src="./assets/staff.png" alt="Img" style="height: 535px;" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex flex-column gap-4">
+                                <div class="staff">
+                                    <a href="#">
+                                        <img class="img-fluid w-100" src="./assets/staff2.png" alt="Img"
+                                            style="height: 253px;" />
+                                    </a>
+                                </div>
+                                <div class="staff">
+                                    <a href="#">
+                                        <img class="img-fluid w-100" src="./assets/staff3.png" alt="Img"
+                                            style="height: 253px;" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- The WPS Staff Picks End -->
+
+            <!-- Sponsors Start -->
+            <section>
+                <div class="container">
+                    <h2 class="mb-4">Sponsors</h2>
+                    <div class="row gy-4">
+                        <div class="col-12 col-md-6">
+                            <div class="staff" style="height: 421px;">
+                                <img class="img-fluid" src="./assets/sponser.png" alt="Img" style="height: 421px;" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex flex-column gap-4">
+                                <div class="staff">
+                                    <img class="img-fluid" src="./assets/staff2.png" alt="Img" style="height: 195px;" />
+                                </div>
+                                <div class="d-flex justify-content-between gap-4 align-items-center">
+                                    <div class="staff">
+                                        <img class="img-fluid" src="./assets/staff3.png" alt="Img"
+                                            style="height: 195px;" />
+                                    </div>
+                                    <div class="staff">
+                                        <img class="img-fluid" src="./assets/staff3.png" alt="Img"
+                                            style="height: 195px;" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+            <!-- Sponsors End -->
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row gy-2 text-center text-md-start">
+                <div class="col-12 col-md-6">
+                    <p>THE WALLPAPER SOCIETY</p>
+                </div>
+                <div class="col-12 col-md-2">
+                    <ul>
+                        <li>Navigation</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Favorites</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2">
+                    <ul>
+                        <li>Top Categories</li>
+                        <li><a href="#">Gaming</a></li>
+                        <li><a href="#">Anime</a></li>
+                        <li><a href="#">4K</a></li>
+                        <li><a href="#">Japan</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2">
+                    <ul>
+                        <li>The Society</li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Copyright Information</a></li>
+                        <li><a href="#">Socials</a></li>
+                        <li><a href="#">Sponsors / Advertisers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footerBottom d-flex flex-column flex-lg-row justify-content-center align-items-center gap-4">
+                <span>© The Wallpapers Society</span>
+                <span><a href="#">Community Rules</a></span>
+                <span><a href="#">Privacy Policy</a></span>
+                <span><a href="#">Terms and Conditions</a></span>
+                <div class="themeChangeBtn d-flex justify-content-center align-items-center gap-1">
+                    <div class="d-flex justify-content-center align-items-center" style="gap:2px;">
+                        <img src="./assets/Moon.png" alt="img">
+                        Dark
+                    </div>
+                    <img src="./assets/downArrow.png" alt="img">
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

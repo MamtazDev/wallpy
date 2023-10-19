@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: #202529;
+    background-color: #1A1C1F;
 }
 
 h1,
@@ -124,7 +124,7 @@ hr {
     background: #939393;
 }
 
-.bgShadowTop,
+
 .sideBar {
     position: relative;
     z-index: 99999;
@@ -233,6 +233,16 @@ header,
     font-weight: 400;
 }
 
+.profileMenu {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    padding: 6px 6px 6px 31px;
+    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.20);
+}
+
 .profileImg,
 .profileImg img {
     position: relative;
@@ -241,6 +251,31 @@ header,
     width: 50px;
     border-radius: 50%;
 }
+
+.profileMenu .favourite span svg path, .profileMenu .lock span svg path, .profileMenu .accSetting span svg path {
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.profileMenu .lock:hover span svg path,.profileMenu .accSetting:hover span svg path {
+    fill: #FDF516;
+}
+
+
+.profileMenu .favourite:hover span svg path{
+    fill:#DD2E44;
+}
+
+.profileMenu button{
+    opacity: 0.75;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.profileMenu button:hover{
+    opacity: 1;
+}
+
 
 .navBg {
     padding: 12px 22px;
@@ -286,6 +321,10 @@ header,
     color: #FDF516;
 }
 
+.childInner a:hover span svg path {
+    fill: #FDF516;
+}
+
 .accountParent:hover .accountChild {
     visibility: visible;
 }
@@ -303,35 +342,30 @@ header,
     color: #F4F4F4;
 }
 
-.bgShadowTop::before {
-    position: absolute;
-    content: "";
-    left: 11%;
-    top: 11%;
-    z-index: -9999;
-    background: transparent;
-    border-radius: 50%;
-    -webkit-box-shadow: 0 0 348px 218px #25242c;
-    -moz-box-shadow: 0 0 348px 218px #25242c;
-    box-shadow: 0 0 348px 218px #25242c;
-    /* box-shadow: 0 0 348px 218px #2200ff; */
+.bgShadowTop {
+    background-image: url("../assets/Vector.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.bgShadowTop::after {
-    position: absolute;
-    content: "";
-    right: 11%;
-    top: 11%;
-    z-index: -9999;
-    background: transparent;
-    border-radius: 50%;
-    -webkit-box-shadow: 0 0 348px 218px #545454;
-    -moz-box-shadow: 0 0 348px 218px #545454;
-    box-shadow: 0 0 348px 218px #545454;
-    /* box-shadow: 0 0 348px 218px #ff0000; */
+.bgShadowMiddle {
+    background-image: url("../assets/middle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.bgShadowBottom {
+.bgShadowbottom {
+    background-image: url("../assets/bottom.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* .bgShadowBottom {
     position: relative;
     z-index: 5;
 }
@@ -347,7 +381,6 @@ header,
     -webkit-box-shadow: 0 0 348px 218px #2b2b2b;
     -moz-box-shadow: 0 0 348px 218px #2b2b2b;
     box-shadow: 0 0 348px 218px #2b2b2b;
-    /* box-shadow: 0 0 348px 218px #ffffff; */
 }
 
 .bgShadowBottom::after {
@@ -361,15 +394,14 @@ header,
     -webkit-box-shadow: 0 0 348px 218px #000;
     -moz-box-shadow: 0 0 348px 218px #000;
     box-shadow: 0 0 348px 218px #000;
-    /* box-shadow: 0 0 348px 218px #ffffff; */
-}
+} */
 
-.authShadowBottom {
+/* .authShadowBottom {
     position: relative;
     z-index: 5;
-}
+} */
 
-.authShadowBottom::before {
+/* .authShadowBottom::before {
     position: absolute;
     content: "";
     left: 30%;
@@ -380,7 +412,6 @@ header,
     -webkit-box-shadow: 0 0 348px 218px #2b2b2b;
     -moz-box-shadow: 0 0 348px 218px #2b2b2b;
     box-shadow: 0 0 348px 218px #2b2b2b;
-    /* box-shadow: 0 0 348px 218px #ffffff; */
 }
 
 .authShadowBottom::after {
@@ -394,7 +425,6 @@ header,
     -webkit-box-shadow: 0 0 348px 218px #2b2b2b;
     -moz-box-shadow: 0 0 348px 218px #2b2b2b;
     box-shadow: 0 0 348px 218px #2b2b2b;
-    /* box-shadow: 0 0 348px 218px #ffffff; */
 }
 
 .searchShadowBottom {
@@ -413,7 +443,6 @@ header,
     -webkit-box-shadow: 0 0 348px 218px #2b2b2b;
     -moz-box-shadow: 0 0 348px 218px #2b2b2b;
     box-shadow: 0 0 348px 218px #2b2b2b;
-    /* box-shadow: 0 0 348px 218px #ffffff; */
 }
 
 .searchShadowBottom::after {
@@ -427,8 +456,7 @@ header,
     -webkit-box-shadow: 0 0 348px 218px #2b2b2b;
     -moz-box-shadow: 0 0 348px 218px #2b2b2b;
     box-shadow: 0 0 348px 218px #2b2b2b;
-    /* box-shadow: 0 0 348px 218px #ffffff; */
-}
+} */
 
 /* Header End */
 
