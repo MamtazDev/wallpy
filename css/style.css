@@ -130,10 +130,6 @@ hr {
     z-index: 99999;
 }
 
-.mainPosition {
-    position: relative;
-    z-index: 999999;
-}
 
 /* Header Start */
 header,
