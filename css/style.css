@@ -1206,7 +1206,7 @@ footer hr {
     transition: 0.4s ease-in-out;
 }
 
-.shareProfile button:hover{
+.shareProfile button:hover {
     opacity: 1;
     background: unset;
 }
@@ -1230,9 +1230,69 @@ footer hr {
     opacity: 1;
 }
 
+.modal-content {
+    background-color: #2D2D2D;
+}
 
-.modalClose{
+.modalClose {
     background: unset !important;
+}
+
+.msgModal {
+    padding: 0 30px 30px;
+}
+
+.msgModal h4 {
+    font-size: 20px;
+}
+
+.msgModal p {
+    color: #939393;
+    font-size: 12px;
+}
+
+.msgModal form label {
+    font-size: 15px;
+    display: block;
+}
+
+.msgModal form textarea {
+    border-radius: 10px;
+    background: #202020;
+    padding: 8px 13px;
+    font-size: 12px;
+    font-family: var(--bak);
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFF;
+    width: 100%;
+    border-color: transparent;
+    margin-bottom: 16px;
+}
+
+.msgModal form textarea::placeholder {
+    color: #5B5B5B;
+    font-size: 12px;
+    font-family: var(--bak);
+    font-weight: 400;
+}
+
+.msgModal form .sendBtn{
+    padding: 10px 40px;
+    border-radius: 10px;
+    background: #FFF;
+    color: #202020;
+    font-size: 12px;
+    width: 158px;
+    white-space: nowrap;
+}
+
+.msgModal form .cancleBtn {
+    background: #202020;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: #FFF;
+    width: 158px;
 }
 
 .ownWall {

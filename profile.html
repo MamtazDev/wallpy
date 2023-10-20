@@ -129,13 +129,30 @@
                                             <div class="d-flex justify-content-end">
                                                 <button type="button" class="modalClose" data-bs-dismiss="modal"
                                                     aria-label="Close">
-                                                <img src="./assets/clear.png" alt="close">
+                                                    <img src="./assets/clear.png" alt="close">
                                                 </button>
                                             </div>
-                                            <div class="modal-body">
-                                            
+                                            <div class="msgModal">
+                                                <h4 class="fontBak mb-2">Send a message</h4>
+                                                <p class="fontBak mb-4">
+                                                    Please be sure to familiarize yourself with the site rules before
+                                                    composing your message
+                                                </p>
+                                                <form action="">
+                                                    <label for="message" class="fontBak mb-2">Message</label>
+                                                    <textarea name="message" id="message" cols="30" rows="7"
+                                                        placeholder="Write the details here..."></textarea>
+
+                                                    <div class="d-flex flex-column align-items-center gap-3">
+                                                        <button class="sendBtn fontBak">
+                                                            Send Message
+                                                        </button>
+                                                        <button class="cancleBtn fontBak" >
+                                                            Cancel
+                                                        </button>
+                                                    </div>
+                                                </form>
                                             </div>
-                                            
                                         </div>
                                     </div>
                                 </div>
